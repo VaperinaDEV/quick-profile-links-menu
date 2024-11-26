@@ -1,0 +1,38 @@
+profile_links:
+  type: objects
+  default: 
+    [
+      { "icon": circle-user, "label": Profile Picture, "page": account, "setting": user-avatar },
+      { "icon": user-pen, "label": About me, "page": profile, "setting": user-bio },
+      { "icon": image, "label": Profile Header, "page": profile, "setting": user-profile-bg },
+      { "icon": address-card, "label": User Card Background, "page": profile, "setting": user-card-bg },
+      { "icon": location-dot, "label": Location, "page": profile, "setting": user-location },
+      { "icon": globe, "label": Web Site, "page": profile, "setting": user-website },
+    ]
+  schema:
+    name: "link"
+    properties:
+      icon:
+        type: string
+        required: true
+      label:
+        type: string
+        required: true
+      page:
+        type: enum
+        choices:
+          - account
+          - security
+          - profile
+          - emails
+          - notifications
+          - tracking
+          - users
+      setting:
+        type: string
+        required: true
+svg_icons:
+  default: "circle-user|address-card"
+  type: list
+  list_type: "compact"
+  description: "List of FontAwesome 6 icons used in this theme component"
