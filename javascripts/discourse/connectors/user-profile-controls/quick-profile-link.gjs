@@ -9,7 +9,6 @@ import I18n from "discourse-i18n";
 
 export default class QuickProfileLink extends Component {
   @service currentUser;
-  @service appEvents;
 
   get dMenuLabel() {
     return I18n.t(themePrefix("quick_profile_link.button_label"));
