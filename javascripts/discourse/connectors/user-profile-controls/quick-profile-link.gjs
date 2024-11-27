@@ -33,7 +33,7 @@ export default class QuickProfileLink extends Component {
           @interactive={{true}}
           @triggers="click"
           id="quick-profile-link"
-          @icon="pencil"
+          @icon={{settings.button_icon}}
           @label={{this.dMenuLabel}}
           @modalForMobile={{true}}
           @onRegisterApi={{this.onRegisterApi}}
