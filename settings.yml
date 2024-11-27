@@ -35,6 +35,10 @@ button_icon:
   default: "pencil"
   type: string
   description: "Change the quick profile link menu button icon"
+user_menu_tab_icon:
+  default: "pencil"
+  type: string
+  description: "Change the quick profile link user menu tab icon"
 svg_icons:
   default: "circle-user|address-card"
   type: list
