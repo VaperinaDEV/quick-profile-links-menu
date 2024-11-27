@@ -1,0 +1,17 @@
+.user-menu.revamped {
+  .tabs-list {
+    #user-menu-button-quick-profile-links {
+      order: -1;
+    }
+  }
+  #quick-access-quick-profile-links {
+    .user-menu-profile-links-tab {
+      li {
+        > a {
+          padding: 0.5em;
+          margin: 0.25em 0;
+        }
+      }
+    }
+  }
+}
