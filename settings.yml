@@ -31,6 +31,10 @@ profile_links:
       setting:
         type: string
         required: true
+button_icon:
+  default: "pencil"
+  type: string
+  description: "Change the quick profile link menu button icon"
 svg_icons:
   default: "circle-user|address-card"
   type: list
