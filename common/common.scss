@@ -1,52 +1,58 @@
 @if $enabled-user-menu-tab == "true" {
   .user-menu.revamped {
-    width: unset;
-    .quick-access-panel {
-      width: calc(320px + 1.75em);
-    }
-    .panel-body-contents {
-      flex-direction: column;
-    }
-    .menu-tabs-container {
-      flex-direction: row;
-      border-left: none;
-      padding: 0;
-      overflow-y: unset;
-    }
-    .tabs-list {
-      flex-direction: row;
-      .btn {
-        padding: 0.857em;
-      }
-      #user-menu-button-quick-profile-links {
-        border-left: 1px solid var(--primary-low);
-        order: 100;
-      }
-      &.bottom-tabs {
-        border-top: none;
-      }
-    }
-    #quick-access-quick-profile-links {
-      .user-menu-profile-links-tab {
-        flex-flow: column;
-        overflow: hidden;
-        li {
-          > a {
-            padding: 0.5em 0.25em;
+    #quick-access-custom-profile {
+      .custom-profile-tab-quick-links {
+        li > * {
+          justify-content: flex-start;
+          padding: 0.5em 0.25em;
+          margin: 0;
+          width: 100%;
+
+          img.emoji {
+            height: 1em;
+            width: 1em;
+            padding-top: 0.2em;
+            margin-right: 0.5em;
+          }
+          .d-icon {
+            padding-top: 0;
+          }
+          &.enabled .d-icon {
+            color: var(--tertiary);
           }
         }
-      }
-    }
-  
-    // hide default preferences item
-    #quick-access-profile {
-      li > * {
-        padding: 0.5em 0.25em;
-        margin: 0.25em;
-        height: unset;
-      }
-      li.preferences {
-        display: none;
+    
+        .set-user-status {
+          .emoji {
+            padding-top: 0;
+          }
+        }
+
+        .profile-tab-btn {
+          .relative-date {
+            font-size: var(--font-down-3);
+            color: var(--primary-medium);
+          }
+    
+          justify-content: unset;
+          line-height: var(--line-height-large);
+          width: 100%;
+    
+          .d-icon {
+            padding: 0;
+          }
+        }
+    
+        .do-not-disturb {
+          .d-icon-toggle-on {
+            color: var(--tertiary);
+          }
+        }
+    
+        hr {
+          border-top: 1px solid var(--primary-low);
+          width: 100%;
+        }
       }
     }
   }
