@@ -1,5 +1,8 @@
 @if $enabled-user-menu-tab == "true" {
   .user-menu.revamped {
+    .quick-access-panel {
+      width: calc(320px + 1.75em);
+    }
     .panel-body-contents {
       flex-direction: column;
     }
