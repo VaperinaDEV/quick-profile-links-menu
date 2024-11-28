@@ -8,13 +8,7 @@ export default apiInitializer("1.8.0", (api) => {
   
   if (!userMenuTabSetting) {
     return;
-  } 
-
-  api.addQuickAccessProfileItem({
-    icon: "star",
-    href: "/",
-    content: "Test button"
-  });
+  }
   
   api.registerUserMenuTab((UserMenuTab) => {
     return class extends UserMenuTab {
