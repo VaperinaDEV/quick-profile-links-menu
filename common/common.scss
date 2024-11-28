@@ -24,6 +24,10 @@
           &.enabled .d-icon {
             color: var(--tertiary);
           }
+
+          &.custom-preference-item {
+            margin-left: 1.5em;
+          }
         }
     
         .set-user-status {
