@@ -74,7 +74,6 @@ export default class ProfileTabContent extends Component {
       });
     } else {
       this.saving = false;
-      this.args.closeUserMenu();
       this.modal.show(DoNotDisturbModal);
     }
   }
