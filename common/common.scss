@@ -2,23 +2,27 @@
   .user-menu.revamped {
     #quick-access-custom-profile {
       .custom-profile-tab-quick-links {
-        li > * {
-          justify-content: flex-start;
-          padding: 0.5em 0.25em;
-          margin: 0;
-          width: 100%;
-
-          img.emoji {
-            height: 1em;
-            width: 1em;
-            padding-top: 0.2em;
-            margin-right: 0.5em;
-          }
-          .d-icon {
-            padding-top: 0;
-          }
-          &.enabled .d-icon {
-            color: var(--tertiary);
+        li {
+          flex: 1 1 auto;
+          max-height: 3em; // prevent buttons from getting too tall
+          > * {
+            justify-content: flex-start;
+            padding: 0.5em 0.25em;
+            margin: 0;
+            width: 100%;
+  
+            img.emoji {
+              height: 1em;
+              width: 1em;
+              padding-top: 0.2em;
+              margin-right: 0.5em;
+            }
+            .d-icon {
+              padding-top: 0;
+            }
+            &.enabled .d-icon {
+              color: var(--tertiary);
+            }
           }
         }
     
