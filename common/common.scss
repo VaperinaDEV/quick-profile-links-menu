@@ -28,11 +28,15 @@
           &.custom-preference-item {
             position: relative;
             margin-left: 1.5em;
+            > * {
+              font-size: var(--font-down-1);
+            }
             // lines
             &:before {
               content: "";
               position: absolute;
               height: 100%;
+              top: -50%;
               left: -0.75em;
               border-left: 1px solid var(--primary-medium);
             }
