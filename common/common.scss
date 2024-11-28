@@ -17,7 +17,8 @@
     #quick-access-custom-profile {
       .custom-profile-tab-quick-links {
         flex-flow: column;
-        overflow: auto;
+        overflow-y: auto;
+        overflow-x: hidden;
         li {
           flex: 1 1 auto;
           max-height: 3em; // prevent buttons from getting too tall
