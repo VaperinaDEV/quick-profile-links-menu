@@ -10,19 +10,18 @@
             padding: 0.5em 0.25em;
             margin: 0;
             width: 100%;
-  
-            img.emoji {
-              height: 1em;
-              width: 1em;
-              padding-top: 0.2em;
-              margin-right: 0.5em;
-            }
-            .d-icon {
-              padding-top: 0;
-            }
-            &.enabled .d-icon {
-              color: var(--tertiary);
-            }
+          }
+          img.emoji {
+            height: 1em;
+            width: 1em;
+            padding-top: 0.2em;
+            margin-right: 0.5em;
+          }
+          .d-icon {
+            padding-top: 0;
+          }
+          &.enabled .d-icon {
+            color: var(--tertiary);
           }
         }
     
