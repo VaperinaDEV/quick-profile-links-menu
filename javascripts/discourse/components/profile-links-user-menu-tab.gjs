@@ -1,6 +1,7 @@
 import Component from "@glimmer/component";
 import { service } from "@ember/service";
 import DiscourseURL from "discourse/lib/url";
+import DButton from "discourse/components/d-button";
 import dIcon from "discourse-common/helpers/d-icon";
 
 export default class ProfileLinksUserMenuTab extends Component {
