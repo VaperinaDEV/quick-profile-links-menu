@@ -30,7 +30,6 @@ profile_links:
           - users
       setting:
         type: string
-        required: true
 button_icon:
   default: "pencil"
   type: string
