@@ -1,5 +1,19 @@
 @if $enabled-user-menu-tab == "true" {
   .user-menu.revamped {
+    .menu-tabs-container {
+      .tabs-list {
+        &.top-tabs {
+          #user-menu-button-custom-profile {
+            order: -1; // move custom profile tab to top
+            border-bottom: 1px solid var(--primary-low);
+          }
+        }
+        // hide default profile tab
+        &.bottom-tabs {
+          display: none;
+        }
+      }
+    }
     #quick-access-custom-profile {
       .custom-profile-tab-quick-links {
         flex-flow: column;
