@@ -15,6 +15,7 @@ export default apiInitializer("1.8.0", (api) => {
       id = "quick-profile-links";
       panelComponent = ProfileLinksUserMenuTab;
       icon = settings.user_menu_tab_icon;
+      linkWhenActive = "/my/preferences/account";
 
       get title() {
         return I18n.t(themePrefix("quick_profile_link.user_menu_tab_title"));
