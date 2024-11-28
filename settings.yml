@@ -40,7 +40,7 @@ enabled_user_menu_tab:
   type: bool
   description: "Enable quick profile link user menu tab"
 user_menu_tab_icon:
-  default: "pencil"
+  default: "gear"
   type: string
   description: "Change the quick profile link user menu tab icon"
 svg_icons:
