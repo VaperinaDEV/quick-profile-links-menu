@@ -8,7 +8,7 @@ export default class CustomProfileTabQuickLinks extends Component {
 
   <template>
     {{#each settings.profile_links as |link|}}
-      <li>
+      <li class="custom-preference-item">
         <a
           title={{link.label}}
           href="/u/{{this.currentUser.username_lower}}/preferences/{{link.page}}/#{{link.setting}}"
