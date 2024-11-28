@@ -12,7 +12,7 @@ export default apiInitializer("1.8.0", (api) => {
   
   api.registerUserMenuTab((UserMenuTab) => {
     return class extends UserMenuTab {
-      id = "quick-access-custom-profile";
+      id = "custom-profile";
       panelComponent = CustomProfileTabContent;
       icon = settings.user_menu_tab_icon;
       linkWhenActive = "/my/summary";
