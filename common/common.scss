@@ -24,7 +24,9 @@
           &.enabled .d-icon {
             color: var(--tertiary);
           }
-
+          &.preferences {
+            z-index: 1; // hide line top part
+          }
           &.custom-preference-item {
             position: relative;
             margin-left: 1.5em;
@@ -47,11 +49,6 @@
               left: -0.75em;
               top: 50%;
               border-top: 1px solid var(--primary-medium);
-            }
-            &:last-child {
-              &:before {
-                height: 50%;
-              }
             }
           }
         }
