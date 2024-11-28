@@ -224,6 +224,8 @@ export default class ProfileTabContent extends Component {
           </span>
         </LinkTo>
       </li>
+
+      <CustomProfileTabQuickLinks />
     
       {{#if this.showToggleAnonymousButton}}
         <li
@@ -251,8 +253,6 @@ export default class ProfileTabContent extends Component {
           </DButton>
         </li>
       {{/if}}
-  
-      <CustomProfileTabQuickLinks />
     
       <li class="logout">
         <DButton @action={{routeAction "logout"}} class="btn-flat profile-tab-btn">
