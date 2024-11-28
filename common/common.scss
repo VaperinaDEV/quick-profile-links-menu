@@ -23,10 +23,8 @@
   
     // hide default preferences item
     #quick-access-profile {
-      .user-menu-button-profile {
-        li.preferences {
-          display: none;
-        }
+      li.preferences {
+        display: none;
       }
     }
   }
