@@ -16,6 +16,16 @@ import { userPath } from "discourse/lib/url";
 import { i18n } from "discourse-i18n";
 import CustomProfileTabQuickLinks from "./custom-profile-tab-quick-links"
 
+const _extraItems = [];
+
+export function addUserMenuProfileTabItem(item) {
+  _extraItems.push(item);
+}
+
+export function resetUserMenuProfileTabItems() {
+  _extraItems.clear();
+}
+
 export default class ProfileTabContent extends Component {
   @service currentUser;
   @service siteSettings;
@@ -253,6 +263,19 @@ export default class ProfileTabContent extends Component {
           </DButton>
         </li>
       {{/if}}
+
+      {{#each this.extraItems as |item|}}
+        <li class={{item.className}}>
+          <a href={{item.href}}>
+            {{#if item.icon}}
+              {{dIcon item.icon}}
+            {{/if}}
+            <span class="item-label">
+              {{item.content}}
+            </span>
+          </a>
+        </li>
+      {{/each}}
     
       <li class="logout">
         <DButton @action={{routeAction "logout"}} class="btn-flat profile-tab-btn">
