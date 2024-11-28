@@ -1,14 +1,22 @@
 @if $enabled-user-menu-tab == "true" {
   .user-menu.revamped {
+    .panel-body-contents {
+      flex-direction: column;
+    }
+    .menu-tabs-container {
+      flex-direction: row;
+      border-left: none;
+      padding: 0;
+      overflow-y: unset;
+    }
     .tabs-list {
+      flex-direction: row;
       #user-menu-button-quick-profile-links {
-        border-bottom: 1px solid var(--primary-low);
-        order: -1;
+        border-left: 1px solid var(--primary-low);
+        order: 100;
       }
       &.bottom-tabs {
         border-top: none;
-        // move to the top
-        order: -1;
       }
     }
     #quick-access-quick-profile-links {
@@ -25,6 +33,11 @@
   
     // hide default preferences item
     #quick-access-profile {
+      li > * {
+        padding: 0.5em 0.25em;
+        margin: 0.25em;
+        height: unset;
+      }
       li.preferences {
         display: none;
       }
