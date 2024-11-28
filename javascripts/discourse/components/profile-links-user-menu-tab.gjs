@@ -1,5 +1,6 @@
 import Component from "@glimmer/component";
 import { service } from "@ember/service";
+import DiscourseURL from "discourse/lib/url";
 import dIcon from "discourse-common/helpers/d-icon";
 
 export default class ProfileLinksUserMenuTab extends Component {
@@ -7,6 +8,11 @@ export default class ProfileLinksUserMenuTab extends Component {
 
   get showAllTitle() {
     return I18n.t(themePrefix("quick_profile_link.menu_show_all_settings"));
+  }
+
+  @action
+  showAll() {
+    DiscourseURL.routeTo("/my/preferences/account");
   }
 
   <template>
