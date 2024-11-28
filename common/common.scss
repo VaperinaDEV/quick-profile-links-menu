@@ -1,9 +1,8 @@
 @if $enabled-user-menu-tab == "true" {
   .user-menu.revamped {
-    .desktop-view & {
-      .quick-access-panel {
-        width: calc(320px + 1.75em);
-      }
+    width: unset;
+    .quick-access-panel {
+      width: calc(320px + 1.75em);
     }
     .panel-body-contents {
       flex-direction: column;
@@ -16,6 +15,9 @@
     }
     .tabs-list {
       flex-direction: row;
+      .btn {
+        padding: 0.857em;
+      }
       #user-menu-button-quick-profile-links {
         border-left: 1px solid var(--primary-low);
         order: 100;
