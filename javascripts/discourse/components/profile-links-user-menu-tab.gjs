@@ -7,7 +7,7 @@ export default class ProfileLinksUserMenuTab extends Component {
   @service currentUser;
 
   get showAllTitle() {
-    return I18n.t(themePrefix("quick_profile_link.menu_show_all_settings"));
+    return I18n.t(themePrefix("quick_profile_link.user_menu_show_all_settings"));
   }
 
   @action
