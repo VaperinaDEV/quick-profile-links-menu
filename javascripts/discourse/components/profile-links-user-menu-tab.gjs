@@ -4,6 +4,7 @@ import { action } from "@ember/object";
 import DiscourseURL from "discourse/lib/url";
 import DButton from "discourse/components/d-button";
 import dIcon from "discourse-common/helpers/d-icon";
+import ProfileTabContent from "./profile-tab-content";
 
 export default class ProfileLinksUserMenuTab extends Component {
   @service currentUser;
@@ -19,6 +20,7 @@ export default class ProfileLinksUserMenuTab extends Component {
 
   <template>
     <ul class="user-menu-profile-links-tab">
+      <ProfileTabContent />
       {{#each settings.profile_links as |link|}}
         <li>
           <a
