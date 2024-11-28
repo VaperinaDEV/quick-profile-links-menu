@@ -14,7 +14,7 @@ import { ajax } from "discourse/lib/ajax";
 import DoNotDisturb from "discourse/lib/do-not-disturb";
 import { userPath } from "discourse/lib/url";
 import { i18n } from "discourse-i18n";
-import CustomProfileTabQuickLinks from "./custom-profile-tab-quick-links"
+import CustomProfileTabQuickLinks from "./custom-profile-tab-quick-links";
 
 const _extraItems = [];
 
