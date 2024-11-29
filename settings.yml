@@ -87,16 +87,16 @@ profile_menu_extra_items:
 button_icon:
   default: "pencil"
   type: string
-  description: "Change the quick profile link menu button icon"
+  description: "Change the quick profile link menu button icon on user pages"
 enabled_user_menu_tab:
   default: true
   type: bool
-  description: "Enable quick profile link user menu tab"
+  description: "Enable custom profile user menu tab"
   refresh: true
 user_menu_tab_icon:
   default: "user"
   type: string
-  description: "Change the quick profile link user menu tab icon"
+  description: "Change the custom profile user menu tab icon"
 svg_icons:
   default: "circle-user|address-card"
   type: list
