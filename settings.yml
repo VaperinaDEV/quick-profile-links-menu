@@ -28,6 +28,42 @@ profile_links:
           - notifications
           - tracking
           - users
+          - interface
+          - navigation-menu
+          - chat
+      setting:
+        type: string
+profile_menu_preferences_links:
+  type: objects
+  default: 
+    [
+      { "icon": user, "label": Account, "page": account },
+      { "icon": lock, "label": Security, "page": security },
+      { "icon": bell, "label": Notifications, "page": notifications },
+      { "icon": desktop, "label": Interface, "page": interface },
+    ]
+  schema:
+    name: "link"
+    properties:
+      icon:
+        type: string
+        required: true
+      label:
+        type: string
+        required: true
+      page:
+        type: enum
+        choices:
+          - account
+          - security
+          - profile
+          - emails
+          - notifications
+          - tracking
+          - users
+          - interface
+          - navigation-menu
+          - chat
       setting:
         type: string
 button_icon:
