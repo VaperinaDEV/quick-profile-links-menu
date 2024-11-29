@@ -12,6 +12,7 @@ profile_links:
     ]
   schema:
     name: "link"
+    identifier: label
     properties:
       icon:
         type: string
@@ -47,6 +48,7 @@ profile_menu_preference_items:
     ]
   schema:
     name: "item"
+    identifier: label
     properties:
       icon:
         type: string
@@ -75,6 +77,7 @@ profile_menu_extra_items:
     []
   schema:
     name: "item"
+    identifier: label
     properties:
       icon:
         type: string
