@@ -67,6 +67,22 @@ profile_menu_preferences_links:
           - chat
       setting:
         type: string
+profile_menu_extra_links:
+  type: objects
+  default: 
+    []
+  schema:
+    name: "link"
+    properties:
+      icon:
+        type: string
+        required: true
+      label:
+        type: string
+        required: true
+      url:
+        type: string
+        required: true
 button_icon:
   default: "pencil"
   type: string
