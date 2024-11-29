@@ -1,4 +1,5 @@
 profile_links:
+  description: "Add quick links on user pages so users can find easily the important preference pages or settings."
   type: objects
   default: 
     [
@@ -34,6 +35,7 @@ profile_links:
       setting:
         type: string
 profile_menu_preference_items:
+  description: "Add items to the custom profile menu tab so users can more easily navigate to the desired preference pages or settings."
   type: objects
   default: 
     [
@@ -67,6 +69,7 @@ profile_menu_preference_items:
       setting:
         type: string
 profile_menu_extra_items:
+  description: "Add items to the custom profile menu tab which appears before the Log Out button."
   type: objects
   default: 
     []
