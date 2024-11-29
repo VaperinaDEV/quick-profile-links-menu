@@ -38,6 +38,7 @@ profile_menu_preferences_links:
   default: 
     [
       { "icon": user, "label": Account, "page": account },
+      { "icon": user-pen, "label": Profile, "page": profile },
       { "icon": lock, "label": Security, "page": security },
       { "icon": bell, "label": Notifications, "page": notifications },
       { "icon": desktop, "label": Interface, "page": interface },
