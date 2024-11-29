@@ -14,8 +14,8 @@ import { ajax } from "discourse/lib/ajax";
 import DoNotDisturb from "discourse/lib/do-not-disturb";
 import { userPath } from "discourse/lib/url";
 import { i18n } from "discourse-i18n";
-import CustomProfileTabPrefQuickLinks from "./custom-profile-tab-pref-quick-links";
-import CustomProfileTabExtraQuickLinks from "./custom-profile-tab-extra-quick-links";
+import ProfileTabPreferenceItems from "./profile-tab-preference-items";
+import ProfileTabExtraItems from "./profile-tab-extra-items";
 
 export default class ProfileTabContent extends Component {
   @service currentUser;
@@ -223,7 +223,7 @@ export default class ProfileTabContent extends Component {
         </LinkTo>
       </li>
 
-      <CustomProfileTabPrefQuickLinks />
+      <ProfileTabPreferenceItems />
     
       {{#if this.showToggleAnonymousButton}}
         <li
@@ -252,7 +252,7 @@ export default class ProfileTabContent extends Component {
         </li>
       {{/if}}
 
-      <CustomProfileTabExtraQuickLinks />
+      <ProfileTabExtraItems />
 
       <li class="logout">
         <DButton @action={{routeAction "logout"}} class="btn-flat profile-tab-btn">
