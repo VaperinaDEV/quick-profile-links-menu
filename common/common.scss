@@ -1,3 +1,12 @@
+// hide DMenu button when not viewing self
+.quick-profile-link-trigger {
+  display: none;
+  .viewing-self & {
+    display: inline-flex;
+  }
+}
+
+// user menu profile tab
 @if $enabled-user-menu-tab == "true" {
   .user-menu.revamped {
     .menu-tabs-container {
