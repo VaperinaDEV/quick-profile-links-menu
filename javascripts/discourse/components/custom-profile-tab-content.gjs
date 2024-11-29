@@ -15,6 +15,7 @@ import DoNotDisturb from "discourse/lib/do-not-disturb";
 import { userPath } from "discourse/lib/url";
 import { i18n } from "discourse-i18n";
 import CustomProfileTabPrefQuickLinks from "./custom-profile-tab-pref-quick-links";
+import CustomProfileTabExtraQuickLinks from "./custom-profile-tab-extra-quick-links";
 
 export default class ProfileTabContent extends Component {
   @service currentUser;
@@ -250,7 +251,9 @@ export default class ProfileTabContent extends Component {
           </DButton>
         </li>
       {{/if}}
-    
+
+      <CustomProfileTabExtraQuickLinks />
+
       <li class="logout">
         <DButton @action={{routeAction "logout"}} class="btn-flat profile-tab-btn">
           {{dIcon "right-from-bracket"}}
