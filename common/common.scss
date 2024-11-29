@@ -1,14 +1,104 @@
-.user-menu.revamped {
-  .tabs-list {
-    #user-menu-button-quick-profile-links {
-      order: -1;
+@if $enabled-user-menu-tab == "true" {
+  .user-menu.revamped {
+    .menu-tabs-container {
+      .tabs-list {
+        &.top-tabs {
+          #user-menu-button-custom-profile {
+            order: -1; // move custom profile tab to top
+            border-bottom: 1px solid var(--primary-low);
+          }
+        }
+        // hide default profile tab
+        &.bottom-tabs {
+          display: none;
+        }
+      }
     }
-  }
-  #quick-access-quick-profile-links {
-    .user-menu-profile-links-tab {
-      li {
-        > a {
-          padding: 0.5em 0.25em;
+    #quick-access-custom-profile {
+      .custom-profile-tab-quick-links {
+        flex-flow: column;
+        overflow-y: auto;
+        overflow-x: hidden;
+        li {
+          flex: 1 1 auto;
+          max-height: 3em; // prevent buttons from getting too tall
+          > * {
+            padding: 0.5em 0.25em;
+            margin: 0;
+            align-items: center;
+          }
+          img.emoji {
+            height: 1em;
+            width: 1em;
+            padding-top: 0.2em;
+            margin-right: 0.5em;
+          }
+          .d-icon {
+            padding-top: 0;
+          }
+          &.enabled .d-icon {
+            color: var(--tertiary);
+          }
+          &.preferences {
+            z-index: 1; // hide line top part
+          }
+          &.custom-preference-item {
+            position: relative;
+            margin-left: 1.5em;
+            max-width: calc(100% - 1.5em);
+            > * {
+              font-size: var(--font-down-1);
+            }
+            // lines
+            &:before {
+              content: "";
+              position: absolute;
+              height: 100%;
+              top: -50%;
+              left: -0.75em;
+              border-left: 1px solid var(--primary-medium);
+            }
+            &:after {
+              content: "";
+              position: absolute;
+              width: 0.75em;
+              left: -0.75em;
+              top: 50%;
+              border-top: 1px solid var(--primary-medium);
+            }
+          }
+        }
+    
+        .set-user-status {
+          .emoji {
+            padding-top: 0;
+          }
+        }
+
+        .profile-tab-btn {
+          .relative-date {
+            font-size: var(--font-down-3);
+            color: var(--primary-medium);
+          }
+    
+          justify-content: unset;
+          line-height: var(--line-height-large);
+          width: 100%;
+    
+          .d-icon {
+            padding: 0;
+          }
+        }
+    
+        .do-not-disturb {
+          .d-icon-toggle-on {
+            color: var(--tertiary);
+          }
+        }
+    
+        hr {
+          border-top: 1px solid var(--primary-low);
+          width: 100%;
         }
       }
     }

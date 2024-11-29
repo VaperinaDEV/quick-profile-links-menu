@@ -1,4 +1,5 @@
 profile_links:
+  description: "Add quick links on user pages so users can find easily the important preference pages or settings."
   type: objects
   default: 
     [
@@ -28,21 +29,74 @@ profile_links:
           - notifications
           - tracking
           - users
+          - interface
+          - navigation-menu
+          - chat
       setting:
+        type: string
+profile_menu_preference_items:
+  description: "Add items to the custom profile menu tab so users can more easily navigate to the desired preference pages or settings."
+  type: objects
+  default: 
+    [
+      { "icon": user, "label": Account, "page": account },
+      { "icon": user-pen, "label": Profile, "page": profile },
+      { "icon": lock, "label": Security, "page": security },
+      { "icon": bell, "label": Notifications, "page": notifications },
+      { "icon": desktop, "label": Interface, "page": interface },
+    ]
+  schema:
+    name: "item"
+    properties:
+      icon:
+        type: string
+      label:
+        type: string
+        required: true
+      page:
+        type: enum
+        choices:
+          - account
+          - security
+          - profile
+          - emails
+          - notifications
+          - tracking
+          - users
+          - interface
+          - navigation-menu
+          - chat
+      setting:
+        type: string
+profile_menu_extra_items:
+  description: "Add items to the custom profile menu tab which appears before the Log Out button."
+  type: objects
+  default: 
+    []
+  schema:
+    name: "item"
+    properties:
+      icon:
+        type: string
+      label:
+        type: string
+        required: true
+      url:
         type: string
         required: true
 button_icon:
   default: "pencil"
   type: string
-  description: "Change the quick profile link menu button icon"
+  description: "Change the quick profile link menu button icon on user pages"
 enabled_user_menu_tab:
   default: true
   type: bool
-  description: "Enable quick profile link user menu tab"
+  description: "Enable custom profile user menu tab"
+  refresh: true
 user_menu_tab_icon:
-  default: "pencil"
+  default: "user"
   type: string
-  description: "Change the quick profile link user menu tab icon"
+  description: "Change the custom profile user menu tab icon"
 svg_icons:
   default: "circle-user|address-card"
   type: list
