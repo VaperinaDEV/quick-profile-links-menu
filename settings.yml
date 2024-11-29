@@ -33,7 +33,7 @@ profile_links:
           - chat
       setting:
         type: string
-profile_menu_preferences_links:
+profile_menu_preference_items:
   type: objects
   default: 
     [
@@ -44,11 +44,10 @@ profile_menu_preferences_links:
       { "icon": desktop, "label": Interface, "page": interface },
     ]
   schema:
-    name: "link"
+    name: "item"
     properties:
       icon:
         type: string
-        required: true
       label:
         type: string
         required: true
@@ -67,16 +66,15 @@ profile_menu_preferences_links:
           - chat
       setting:
         type: string
-profile_menu_extra_links:
+profile_menu_extra_items:
   type: objects
   default: 
     []
   schema:
-    name: "link"
+    name: "item"
     properties:
       icon:
         type: string
-        required: true
       label:
         type: string
         required: true
