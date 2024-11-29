@@ -3,19 +3,21 @@ import { service } from "@ember/service";
 import DButton from "discourse/components/d-button";
 import dIcon from "discourse-common/helpers/d-icon";
 
-export default class CustomProfileTabPrefQuickLinks extends Component {
+export default class ProfileTabPreferenceItems extends Component {
   @service currentUser;
 
   <template>
-    {{#each settings.profile_menu_preferences_links as |link|}}
+    {{#each settings.profile_menu_preference_items as |item|}}
       <li class="custom-preference-item">
         <a
-          title={{link.label}}
-          href="/u/{{this.currentUser.username_lower}}/preferences/{{link.page}}/#{{link.setting}}"
+          title={{item.label}}
+          href="/u/{{this.currentUser.username_lower}}/preferences/{{item.page}}/#{{item.setting}}"
         >
-          {{dIcon link.icon}}
+          {{#if item.icon}}
+            {{dIcon item.icon}}
+          {{/if}}
           <span class="item-label">
-            {{link.label}}
+            {{item.label}}
           </span>
         </a>
       </li>
