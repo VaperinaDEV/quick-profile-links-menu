@@ -222,7 +222,11 @@ export default class ProfileTabContent extends Component {
         </LinkTo>
       </li>
 
-      <CustomProfileTabQuickLinks />
+      <li class="preferences-submenus">
+        <ul>
+          <CustomProfileTabQuickLinks />
+        </ul>
+      </li>
     
       {{#if this.showToggleAnonymousButton}}
         <li
