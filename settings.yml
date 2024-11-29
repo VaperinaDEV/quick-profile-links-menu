@@ -84,6 +84,8 @@ profile_menu_extra_items:
       url:
         type: string
         required: true
+        validations:
+          url: true
 button_icon:
   default: "pencil"
   type: string
