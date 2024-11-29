@@ -92,6 +92,7 @@ enabled_user_menu_tab:
   default: true
   type: bool
   description: "Enable quick profile link user menu tab"
+  refresh: true
 user_menu_tab_icon:
   default: "user"
   type: string
