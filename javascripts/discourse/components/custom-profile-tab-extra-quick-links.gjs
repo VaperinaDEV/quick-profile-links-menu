@@ -11,7 +11,7 @@ export default class CustomProfileTabExtraQuickLinks extends Component {
       <li class="custom-extra-item">
         <a
           title={{link.label}}
-          href={{link.url}}"
+          href={{link.url}}
         >
           {{dIcon link.icon}}
           <span class="item-label">
