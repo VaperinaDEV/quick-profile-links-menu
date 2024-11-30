@@ -19,7 +19,10 @@
         }
         // hide default profile tab
         &.bottom-tabs {
-          display: none;
+          border-top: none;
+          #user-menu-button-profile {
+            display: none;
+          }
         }
       }
     }
