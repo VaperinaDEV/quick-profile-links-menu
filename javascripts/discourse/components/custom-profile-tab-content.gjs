@@ -254,6 +254,8 @@ export default class ProfileTabContent extends Component {
 
       <ProfileTabExtraItems />
 
+      <hr />
+
       <li class="logout">
         <DButton @action={{routeAction "logout"}} class="btn-flat profile-tab-btn">
           {{dIcon "right-from-bracket"}}
