@@ -65,7 +65,7 @@
               height: 100%;
               top: -50%;
               left: -0.75em;
-              border-left: 1px solid var(--primary-medium);
+              border-left: 1px solid var(--primary-low-mid);
             }
             &:after {
               content: "";
@@ -73,7 +73,7 @@
               width: 0.75em;
               left: -0.75em;
               top: 50%;
-              border-top: 1px solid var(--primary-medium);
+              border-top: 1px solid var(--primary-low-mid);
             }
           }
         }
