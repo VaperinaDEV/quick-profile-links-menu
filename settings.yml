@@ -48,7 +48,7 @@ profile_menu_preference_items:
     ]
   schema:
     name: "item"
-    identifier: label
+    identifier: page
     properties:
       icon:
         type: string
