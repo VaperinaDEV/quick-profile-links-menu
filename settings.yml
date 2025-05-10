@@ -36,15 +36,17 @@ profile_links:
       setting:
         type: string
 profile_menu_preference_items:
-  description: "Add items to the custom profile menu tab so users can more easily navigate to the desired preference pages or settings."
+  description: >
+    Add items to the custom profile menu tab so users can more easily navigate to preference pages or settings.
+    Each item can optionally include a "label" field to override the default translated text based on the "page" value.
   type: objects
   default: 
     [
-      { "icon": user, "label": Account, "page": account },
-      { "icon": user-pen, "label": Profile, "page": profile },
-      { "icon": lock, "label": Security, "page": security },
-      { "icon": bell, "label": Notifications, "page": notifications },
-      { "icon": desktop, "label": Interface, "page": interface },
+      { "icon": user, "page": account },
+      { "icon": user-pen, "page": profile },
+      { "icon": lock, "page": security },
+      { "icon": bell, "page": notifications },
+      { "icon": desktop, "page": interface },
     ]
   schema:
     name: "item"
