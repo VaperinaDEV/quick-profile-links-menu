@@ -54,7 +54,6 @@ profile_menu_preference_items:
         type: string
       label:
         type: string
-        required: true
       page:
         type: enum
         choices:
