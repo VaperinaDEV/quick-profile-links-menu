@@ -9,9 +9,15 @@ export default class ProfileTabPreferenceItems extends Component {
 
   get translatedItems() {
     return settings.profile_menu_preference_items.map((item) => {
+      let translatedLabel = item.label
+        ? item.label
+        : i18n(`user.preferences_nav.${item.page}`, {
+            defaultValue: item.page,
+          });
+
       return {
         ...item,
-        translatedLabel: i18n(`user.preferences_nav.${item.label}`),
+        translatedLabel,
       };
     });
   }
