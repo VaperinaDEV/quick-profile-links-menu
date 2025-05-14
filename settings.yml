@@ -94,6 +94,11 @@ button_icon:
   default: "pencil"
   type: string
   description: "Change the quick profile link menu button icon on user pages"
+enabled_user_profile_dropdown:
+  default: true
+  type: bool
+  description: "Enable user profile dropdown on user page"
+  refresh: true
 enabled_user_menu_tab:
   default: true
   type: bool
