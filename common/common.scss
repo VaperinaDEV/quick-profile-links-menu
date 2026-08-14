@@ -34,11 +34,6 @@
         li {
           flex: 1 1 auto;
           max-height: 3em; // prevent buttons from getting too tall
-          > * {
-            padding: 0.5em 0.25em;
-            margin: 0;
-            align-items: center;
-          }
           img.emoji {
             height: 1em;
             width: 1em;
@@ -46,7 +41,7 @@
             margin-right: 0.5em;
           }
           .d-icon {
-            padding-top: 0;
+            color: var(--primary-500);
           }
           &.enabled .d-icon {
             color: var(--tertiary);
@@ -61,7 +56,7 @@
             > * {
               font-size: var(--font-down-1);
             }
-            // lines
+            // lines            
             &:before {
               content: "";
               position: absolute;
@@ -87,15 +82,16 @@
           }
         }
 
-        .profile-tab-btn {
+        .profile-tab-btn {    
+          padding: var(--list-item-padding);
+          justify-content: unset;
+          line-height: var(--line-height-large);
+          width: 100%;
+
           .relative-date {
             font-size: var(--font-down-3);
             color: var(--primary-medium);
           }
-    
-          justify-content: unset;
-          line-height: var(--line-height-large);
-          width: 100%;
     
           .d-icon {
             padding: 0;
