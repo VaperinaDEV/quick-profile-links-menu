@@ -30,7 +30,7 @@ export default class QuickProfileLink extends Component {
         <DMenu
           @arrow={{false}}
           @identifier="quick-profile-link"
-          @triggerClass="btn-default btn-icon-text {{@buttonClasses}}"
+          @triggerClass="btn-default"
           @interactive={{true}}
           @triggers="click"
           id="quick-profile-link"
